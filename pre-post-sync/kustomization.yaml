@@ -1,7 +1,5 @@
-namePrefix: pre-post-sync-
-
-bases:
-- ../kustomize-guestbook
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 
 resources:
 - pre-sync-job.yaml
