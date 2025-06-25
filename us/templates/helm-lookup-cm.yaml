@@ -1,0 +1,7 @@
+{{- $ns := lookup "v1" "Namespace" "" "argocd" }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-configmap
+data:
+  environment: {{ $ns.metadata.labels.environment | default "unknown" }}
