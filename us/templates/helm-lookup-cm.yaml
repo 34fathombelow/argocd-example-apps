@@ -1,7 +1,7 @@
-{{- $ns := lookup "v1" "Namespace" "" "argocd" }}
+{{- $ns := lookup "v1" "Namespace" "" "akuity" }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: demo-configmap
 data:
-  environment: {{ $ns.metadata.labels.environment | default "unknown" }}
+  instance: {{ $ns.metadata.labels.akuity.io/argo-cd-instance-id | default "unknown" }}
