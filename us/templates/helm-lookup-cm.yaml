@@ -4,4 +4,4 @@ kind: ConfigMap
 metadata:
   name: demo-configmap
 data:
-  instance: {{ $ns.metadata.labels "akuity.io/argo-cd-instance-id" | default "unknown" }}
+  instance: {{ index $ns.metadata.labels "akuity.io/argo-cd-instance-id" | default "unknown" }}
