@@ -22,8 +22,8 @@ spec:
             replicaCount: '2'
           name: helm-parameters
       env:
-        - name: FOO
-          value: bar
+        - name: HELM_VALUES_FILE
+          value: stage.yaml
   project: default
   syncPolicy:
     automated:
