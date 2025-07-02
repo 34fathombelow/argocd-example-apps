@@ -6,7 +6,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: guestbook
+    namespace: guestbook-helmlookup
     name: temp
   source:
     path: us
