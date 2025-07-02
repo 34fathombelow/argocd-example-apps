@@ -17,6 +17,9 @@ spec:
         - array:
             - stage.yaml
           name: values-files
+        - map:
+            replicaCount: 2
+          name: helm-parameters
   project: default
   syncPolicy:
     automated:
