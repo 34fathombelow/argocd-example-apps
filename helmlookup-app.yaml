@@ -24,7 +24,6 @@ spec:
       env:
         - name: FOO
           value: bar
-  sources: []
   project: default
   syncPolicy:
     automated:
