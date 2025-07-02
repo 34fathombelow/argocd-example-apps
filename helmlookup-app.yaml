@@ -18,9 +18,6 @@ spec:
         - array:
             - values-production.yaml
           name: values-files
-        - map:
-            replicaCount: '2'
-          name: helm-parameters
       env:
         - name: HELM_VALUES_FILE
           value: stage.yaml
