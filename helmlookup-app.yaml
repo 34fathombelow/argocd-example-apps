@@ -16,7 +16,7 @@ spec:
       name: helm-lookup
       parameters:
         - array:
-            - values-production.yaml
+            - stage.yaml
           name: values-files
   project: default
   syncPolicy:
