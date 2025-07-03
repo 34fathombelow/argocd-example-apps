@@ -4,4 +4,4 @@ kind: ConfigMap
 metadata:
   name: helm-lookup-configmap
 data:
-  instance: {{ index $ns.metadata.labels "akuity.io/argo-cd-instance-id" | default "unknown" }}
+  helm-lookup-cluster-name: {{ index $ns.metadata.labels "akuity.io/argo-cd-cluster-name" | default "unknown" }}
